@@ -30,7 +30,7 @@ function randomCard() {
 function showCard(activePlayer, chosenCard) {
 	if (activePlayer['score'] <= 21) {
 		let cardImage = document.createElement('img');
-		cardImage.src = `static/images/${chosenCard}.png`;
+		cardImage.src = `static/images/cards/${chosenCard}.png`;
 		document.querySelector(activePlayer['div']).appendChild(cardImage);
 		hitSound.play();
 	}
